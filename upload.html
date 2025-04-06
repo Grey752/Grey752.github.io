@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>文件管理</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">文件管理</h1>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="upload-section">
+      <h2>上传新文件</h2>
+      <form id="uploadForm">
+        <input type="file" id="fileInput" multiple>
+        <button type="submit" class="upload-btn">上传</button>
+      </form>
+    </section>
+
+    <section class="file-list">
+      <h3>已上传文件</h3>
+      <div id="fileItems" class="grid-container">
+        <!-- 文件列表动态生成 -->
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
